@@ -33,6 +33,7 @@ public class BaseActivity extends AppCompatActivity implements BaseInterface {
     private static final int MY_PERMISION_CODE = 10;
 
     private BaseInterface mBaseInterface;
+    private Context mBaseActivity;
 
     BaseActivity(BaseInterface view){
         mBaseInterface = view;
@@ -50,6 +51,9 @@ public class BaseActivity extends AppCompatActivity implements BaseInterface {
     }
 
     public BaseActivity(Context context) {
+
+        this.mBaseActivity = context;
+
     }
 
     public boolean checkInternetConnection(Boolean connectionState){
@@ -68,7 +72,11 @@ public class BaseActivity extends AppCompatActivity implements BaseInterface {
     }
 
     public void showToastMessage (Context context,String message){
-        Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
+
+        Toast t = new Toast(this);
+        t.makeText(context,message,Toast.LENGTH_SHORT);
+        t.show();
+        //Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
 
     }
 

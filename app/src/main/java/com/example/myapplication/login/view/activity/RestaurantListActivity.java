@@ -180,6 +180,7 @@ public class RestaurantListActivity extends AppCompatActivity implements GoogleA
                     } else {
 
                         Toast.makeText(this,"You won't be able to access the features of this App",Toast.LENGTH_LONG).show();
+                       // mBaseActivity.showToastMessage(this,"can't access");
                         progress.setVisibility(View.GONE);
                         //Permission disable by device policy or user denied permanently. Show proper error message
                     }
@@ -466,7 +467,7 @@ public class RestaurantListActivity extends AppCompatActivity implements GoogleA
 
 
 
-    private void showAlert() {
+    /*private void showAlert() {
         final AlertDialog.Builder dialog = new AlertDialog.Builder(this);
         dialog.setTitle("Enable Location")
                 .setMessage("Your Locations Settings are OFF \nPlease Enable Location")
@@ -489,7 +490,7 @@ public class RestaurantListActivity extends AppCompatActivity implements GoogleA
                     }
                 });
         dialog.show();
-    }
+    }*/
 
     @Override
     public void onConnected(@Nullable Bundle bundle) {

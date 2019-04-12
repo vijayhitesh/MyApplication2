@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.Mapv
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //txtLat = (TextView) findViewById(R.id.tv);
+        mBaseActivity = new BaseActivity(this);
 
 
 

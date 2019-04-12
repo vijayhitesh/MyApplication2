@@ -37,12 +37,14 @@ public class MainPresenterTest {
     @Test
     public void handleSignInBtn() {
         mainPresenter.handleSignInBtn();
-        //verify(mapview).showMapScreen;
+       verify(mapview).showMapScreen();
+        //verify(mainPresenter).handleSignInBtn();
     }
 
     @Test
     public void handleSignOutBtn() {
         mainPresenter.handleSignOutBtn();
-        //verify(mapview).closeMapScreen;
+        verify(mapview).showSignOffScreen();
+        //verify(mainPresenter).handleSignOutBtn();
     }
 }
