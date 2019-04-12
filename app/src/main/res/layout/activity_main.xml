@@ -4,9 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main.MainActivity"
-    android:padding="16dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+
+    tools:context=".login.view.activity.MainActivity">
+
+
+    <!--<android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        style="@style/HeaderBar"
+        android:elevation="0dp"
+
+        />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
 
     <TextView
         android:id="@+id/tv"
@@ -22,22 +38,23 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
         android:layout_gravity="center"
-        />
+        android:src="@mipmap/ic_launcher" />
 
     <Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="@string/sign_in_btn"
-    android:id="@+id/sign_in_btn"
-        android:layout_marginTop="20dp"/>
-
-    <Button
+        android:id="@+id/sign_in_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/sign_out_btn"
+        android:layout_marginTop="20dp"
+        android:text="@string/sign_in_btn" />
+
+    <Button
         android:id="@+id/sign_out_btn"
-        android:layout_marginTop="10dp"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/sign_out_btn" />
+
+</LinearLayout>
 
 </LinearLayout>

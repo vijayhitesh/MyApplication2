@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="sign_in_btn">Sign In</string>
+    <string name="sign_in_btn">Go to Map Activity</string>
     <string name="sign_out_btn">Sign Out</string>
 </resources>

@@ -22,7 +22,25 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    compile 'com.google.android.gms:play-services-location:11.0.4'
+
+    compile 'com.google.android.gms:play-services-places:11.0.4'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.android.support:design:28.0.+'
+    implementation 'com.android.support:cardview-v7:28.0.+'
+    implementation 'com.android.support:recyclerview-v7:28.0.+'
+    implementation 'com.squareup.picasso:picasso:2.4.0'
+
     testImplementation 'junit:junit:4.12'
+    implementation 'org.mockito:mockito-core:1.10.19'
+    implementation 'com.google.dexmaker:dexmaker:1.2'
+    androidTestImplementation 'com.google.dexmaker:dexmaker-mockito:1.2'
+    // required if you want to use Mockito for Android tests
+    //androidTestImplementation 'org.mockito:mockito-android:1.10.19'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
